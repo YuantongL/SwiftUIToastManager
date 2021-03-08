@@ -1,0 +1,16 @@
+PODS:
+  - SwiftUIToastManager (1.0)
+
+DEPENDENCIES:
+  - SwiftUIToastManager (from `../`)
+
+EXTERNAL SOURCES:
+  SwiftUIToastManager:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  SwiftUIToastManager: cf67e087a8d520793d75b148f641586f1cb71348
+
+PODFILE CHECKSUM: b696008c60dc39897c904b64d3985e8d834318ed
+
+COCOAPODS: 1.10.1
