@@ -60,3 +60,4 @@ toastManager.remove(ToastType3())
 Look at the /Example for a simple implementation.
 
 ### License
+This repository is under MIT license. [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
