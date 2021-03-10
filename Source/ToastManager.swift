@@ -11,6 +11,11 @@ import SwiftUI
 /// Manages toasts appear/hiden on the screen
 public class BottomToastManager: ObservableObject {
 
+    public enum InsertPosition {
+        case top
+        case bottom
+    }
+
     /// Stores all hidden toasts
     @Published
     private(set) var hiddenToastTypes: Set<AnyToastType> = []
@@ -24,9 +29,19 @@ public class BottomToastManager: ObservableObject {
     }
 
     /// Insert a new toast to the top of the toast stack (new appears from the bottom of the view)
-    public func insert(_ toast: AnyToast) {
+    public func insert(_ toast: AnyToast, position: InsertPosition = .bottom) {
+        guard !toasts.contains(where: {
+            $0 == toast
+        }) else {
+            return
+        }
         withAnimation(.easeInOut(duration: 0.2)) {
-            toasts.append(toast)
+            switch position {
+            case .top:
+                toasts.insert(toast, at: 0)
+            case .bottom:
+                toasts.append(toast)
+            }
         }
     }
 

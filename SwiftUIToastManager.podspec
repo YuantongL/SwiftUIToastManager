@@ -2,7 +2,7 @@
 Pod::Spec.new do |spec|
   spec.ios.deployment_target  = '14.0'
   spec.name         = 'SwiftUIToastManager'
-  spec.version      = '1.1'
+  spec.version      = '1.2'
   spec.swift_versions = '5.0'
   spec.license      = { :type => 'MIT' }
   spec.homepage     = 'https://github.com/YuantongL/SwiftUIToastManager'

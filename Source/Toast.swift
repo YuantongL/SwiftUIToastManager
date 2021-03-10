@@ -46,6 +46,12 @@ public struct AnyToast: Toast {
     }
 }
 
+extension AnyToast: Equatable {
+    public static func == (lhs: Self, rhs: Self) -> Bool {
+        lhs.type.id == rhs.type.id
+    }
+}
+
 extension View {
     public func hasToasts(_ toasts: [AnyToast]) -> some View {
         BottomToastView(initialToasts: toasts) {

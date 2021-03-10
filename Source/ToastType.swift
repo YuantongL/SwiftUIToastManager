@@ -27,3 +27,9 @@ public struct AnyToastType: ToastType {
 }
 
 extension AnyToastType: Hashable {}
+
+extension AnyToastType: Equatable {
+    public static func == (lhs: Self, rhs: Self) -> Bool {
+        return lhs.id == rhs.id
+    }
+}
