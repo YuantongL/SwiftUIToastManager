@@ -1,7 +1,7 @@
 
 # SwiftUIToastManager
 
-### What it can do?
+### What can SwiftUIToastManager do?
 SwiftUIToastManager is a tool to manage the toast views (a card came from bottom of the screen) on the screen. You can add/remove, hide/show toast cards and they can stay on the screen while navigate through the app.
 
 <p align="center">
